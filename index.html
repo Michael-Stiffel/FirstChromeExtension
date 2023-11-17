@@ -4,27 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Währungsrechner</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body onload=>
     <div>
         <h2>
             Währungsrechner
         </h2>
-        <input type="number" id="amount" placeholder="Enter in Amount to convert"/> 
-        <select id="wantcurrency">
-            <option value="EUR">EUR</option>
-            <option value="CAD">CAD</option>
-            <option value="GBP">GBP</option>
-            <option value="JPY">JPY</option>
+        <div class="AuswahlDiv">        
+            <input class="Auswahl" type="number" id="amount" placeholder="Enter in Amount to convert"/> 
+        </div>
+        <div class="AuswahlDiv">
+            <select class="Auswahl" id="wantcurrency">
+            <option title="Euro" value="EUR">EUR</option>
+            <option title="Canadian Dollar" value="CAD">CAD</option>
+            <option title="British Pound" value="GBP">GBP</option>
+            <option title="Japanese Yen" value="JPY">JPY</option>
+            <option title="United States Dollar" value="USD">USD</option>
+            <option title="Chinese Yuan" value="CNY">CNY</option>
+            <option title="Swiss Franc" value="CHF">CHF</option>
+            <option title="Australian Dollar" value="AUD">AUD</option>
+            <option title="Polish Zloty" value="PLN">PLN</option>
+            <option title="Turkish New Lira" value="TRY">TRY</option>
+            <option title="New Zealand Dollar" value="NZD">NZD</option>
+            <option title="South Korean Won" value="KRW">KRW</option>
+            <option title="Danish Krone" value="DKK">DKK</option>
+            <option title="Hong Kong Dollar" value="HKD">HKD</option>
         </select>
-        into
-        <select id="havecurrency">
-            <option value="EUR">EUR</option>
-            <option value="CAD">CAD</option>
-            <option value="GBP">GBP</option>
-            <option value="JPY">JPY</option>
-        </select>
-       <button id="convert">Convert IT!!!</button>
+    </div>
+        
+        <h3>INTO</h3>
+        <div class="AuswahlDiv">
+            <select class="Auswahl" id="havecurrency">
+                <option title="Euro" value="EUR">EUR</option>
+                <option title="Canadian Dollar" value="CAD">CAD</option>
+                <option title="British Pound" value="GBP">GBP</option>
+                <option title="Japanese Yen" value="JPY">JPY</option>
+                <option title="United States Dollar" value="USD">USD</option>
+                <option title="Chinese Yuan" value="CNY">CNY</option>
+                <option title="Swiss Franc" value="CHF">CHF</option>
+                <option title="Australian Dollar" value="AUD">AUD</option>
+                <option title="Polish Zloty" value="PLN">PLN</option>
+                <option title="Turkish New Lira" value="TRY">TRY</option>
+                <option title="New Zealand Dollar" value="NZD">NZD</option>
+                <option title="South Korean Won" value="KRW">KRW</option>
+                <option title="Danish Krone" value="DKK">DKK</option>
+                <option title="Hong Kong Dollar" value="HKD">HKD</option>
+            </select>
+
+        </div>
+       
+       <button class="ButtonStyle" id="convert">Convert IT!!!</button>
        <div id="result"></div>
     </div>
 

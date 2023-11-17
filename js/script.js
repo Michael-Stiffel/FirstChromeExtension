@@ -5,7 +5,7 @@ const result = document.getElementById('result');
 const havecurrency = document.getElementById('havecurrency');
 const wantcurrency = document.getElementById('wantcurrency');
 
-const API_KEY="7BAlP6K8y2DvrlZpib9QSw==IJyrCUZzutIyySzG";
+const API_KEY="";
 const apiURL="https://api.api-ninjas.com/v1/convertcurrency?";
 
 convert.addEventListener('click', () => {
