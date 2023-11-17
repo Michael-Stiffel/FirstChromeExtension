@@ -3,6 +3,27 @@
     padding: 5px;
 }
 
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: auto;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 .AuswahlDiv{
     display: flex;
     justify-content: center;
@@ -55,3 +76,30 @@ Auswahl {
   .Auswahl:hover::after {
     color: #f39c12;
   }
+
+  #result{
+
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  #convert {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4a71cc;
+    border: none;
+    border-radius: 15px;
+   
+  }
+  
+  #convert:hover {background-color: #0c407c}
+  
+  
